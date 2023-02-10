@@ -43,9 +43,9 @@ export function Header({ children }: PropsWithChildren) {
             <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
                 <nav className="flex items-center justify-between" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="#" className="-m-1.5 p-1.5">
+                        <a href="#" className="-m-2.5 p-2.5">
                             <span className="sr-only">{siteTitle}</span>
-                            <img className="h-20 sm:h-20 md:h-28" src="/images/logo.png" alt="" />
+                            <img className="h-12 sm:h-12 md:h-18 m-2" src="/images/white-logo.svg" alt="" />
                         </a>
                     </div>
                     <div className="flex lg:hidden">
