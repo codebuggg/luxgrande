@@ -27,7 +27,7 @@ export const Seo = withRouter(
       <meta
         name="description"
         key="description"
-        content={`Welcome to ${siteTitle} - The Beauty Luzury You Deserve`}
+        content={`Welcome to ${siteTitle} - The Beauty Luxury You Deserve`}
       />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/favicon.ico" />
@@ -45,7 +45,7 @@ export const Seo = withRouter(
       <meta
         property="og:description"
         key="og:description"
-        content={`Welcome to Lux Grande - The Beauty Luzury You Deserve`}
+        content={`Welcome to Lux Grande - The Beauty Luxury You Deserve`}
       />
       <meta
         property="og:image"
