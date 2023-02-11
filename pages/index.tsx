@@ -2,11 +2,36 @@ import { Seo } from '@/components/Seo'
 import { Shared } from '@/shared'
 import Image from 'next/image'
 
+//for slider
+const images: {
+  head: string;
+  body: string;
+  slide: string;
+}[] = [
+    {
+      slide: "/images/flyer-1-big.jpg",
+      head: "Welcome To Lux Grande",
+      body: "At Lux Grande Beauty Lounge, we believe in providing the highest quality service in an intimate environment that respects your time and your needs. You deserve nothing less than excellence when it comes to your appearance, and we are here to make sure that happens!",
+    },
+    {
+      slide: "/images/flyer-2-big.jpg",
+      head: "Welcome To Lux Grande",
+      body: "At Lux Grande Beauty Lounge, we believe in providing the highest quality service in an intimate environment that respects your time and your needs. You deserve nothing less than excellence when it comes to your appearance, and we are here to make sure that happens!",
+    },
+    {
+      slide: "/images/flyer-1-big.jpg",
+      head: "Welcome To Lux Grande",
+      body: "At Lux Grande Beauty Lounge, we believe in providing the highest quality service in an intimate environment that respects your time and your needs. You deserve nothing less than excellence when it comes to your appearance, and we are here to make sure that happens!",
+    },
+  ];
+
+
 export default function Home() {
   return (
     <>
       <Seo title='Welcome To Lux Grande' />
       <Shared heroSection={<HeroSection />}>
+        <SliderComponent slides={images} />
         <BriefAbout />
         <Services />
         <OurTeam />
@@ -107,6 +132,7 @@ import { LogoCloud } from '@/components/home/logo-cloud'
 import { OurTeam } from '@/components/home/our-team'
 import { Services } from '@/components/home/services'
 import { FAQs } from '@/components/home/faq'
+import { SliderComponent } from '@/components/home/slider'
 
 const features = [
   {

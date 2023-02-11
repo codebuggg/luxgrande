@@ -114,7 +114,7 @@ export function Header({ children }: PropsWithChildren) {
                 </Dialog>
             </div>
             <main>
-                {children}
+                {/* {children} */}
             </main>
         </div>
 
